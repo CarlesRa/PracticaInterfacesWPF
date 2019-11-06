@@ -22,8 +22,6 @@
             <Setter Property="FontWeight" Value="Bold" />
             <Setter Property="Margin" Value="0,0,0,5" />
             <Setter Property="Label.Foreground" Value="White"></Setter>
-            <Setter Property="Background" Value="Black"></Setter>
-            <Setter Property="Opacity" Value="0.80"></Setter>
         </Style>
 
         <!-- DataGrid header style -->
