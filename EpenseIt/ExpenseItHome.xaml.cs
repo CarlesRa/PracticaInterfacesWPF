@@ -32,5 +32,11 @@ namespace EpenseIt
             this.NavigationService.Navigate(expenseReportPage);
 
         }
+
+        private void Enter(object sender, KeyEventArgs e)
+        {
+            ExpenseReportPage expenseReportPage = new ExpenseReportPage(this.peopleListBox.SelectedItem);
+            this.NavigationService.Navigate(expenseReportPage);
+        }
     }
 }

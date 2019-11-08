@@ -30,22 +30,22 @@
             <XmlDataProvider x:Key="ExpenseDataSource" XPath="Expenses">
                 <x:XData>
                     <Expenses xmlns="">
-                        <Person Name="Mike" Department="Legal">
+                        <Person Name="Mike" Age="18" Puesto="Operario" Department="Legal">
                             <Expense ExpenseType="Lunch" ExpenseAmount="50" />
                             <Expense ExpenseType="Transportation" ExpenseAmount="50" />
                         </Person>
-                        <Person Name="Lisa" Department="Marketing">
+                        <Person Name="Lisa" Age="54" Puesto="Jefe" Department="Marketing">
                             <Expense ExpenseType="Document printing"
           ExpenseAmount="50"/>
                             <Expense ExpenseType="Gift" ExpenseAmount="125" />
                         </Person>
-                        <Person Name="John" Department="Engineering">
+                        <Person Name="John" Age="34" Puesto="Encargado" Department="Engineering">
                             <Expense ExpenseType="Magazine subscription" 
          ExpenseAmount="50"/>
                             <Expense ExpenseType="New machine" ExpenseAmount="600" />
                             <Expense ExpenseType="Software" ExpenseAmount="500" />
                         </Person>
-                        <Person Name="Mary" Department="Finance">
+                        <Person Name="Mary" Age="30" Puesto="Operario" Department="Finance">
                             <Expense ExpenseType="Dinner" ExpenseAmount="100" />
                         </Person>
                     </Expenses>
@@ -57,7 +57,7 @@
             </DataTemplate>
         </Grid.Resources>
 
-        <Label Style="{StaticResource headerTextStyle}" Grid.ColumnSpan="2"  VerticalAlignment="Center">
+        <Label Style="{StaticResource headerTextStyle}" Grid.ColumnSpan="2"  VerticalAlignment="Center" Margin="100,2,-75,35.2" Grid.RowSpan="2">
             View Expense Report
         </Label>
 
@@ -71,7 +71,7 @@
         </ListBox>
 
         <!-- View report button -->
-        <Button Grid.Column="1" Grid.Row="3" Margin="0,50,25,0" Width="125" Height="25" HorizontalAlignment="Right" 
-                ToolTip="Click to submit your information" Click="Button_Click">View</Button>
+        <Button Grid.Column="1" Grid.Row="3" Margin="0,50,25,10" Width="125" Height="25" HorizontalAlignment="Right" 
+         IsDefault="True" ToolTip="Click to submit your information" Click="Button_Click" KeyUp="Enter">View</Button>
     </Grid>
 </Page>
